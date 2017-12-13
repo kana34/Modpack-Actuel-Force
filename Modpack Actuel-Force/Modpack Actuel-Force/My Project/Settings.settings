@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="path_install" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Games\World_of_Tanks</Value>
+    </Setting>
+    <Setting Name="version_modpack" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="version_jeu" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="lien_mods" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.actuel-force.ovh/jeux/wot/modpack/mods/</Value>
+    </Setting>
+    <Setting Name="lien_site" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.actuel-force.ovh</Value>
+    </Setting>
+    <Setting Name="lien_forum" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.actuel-force.ovh</Value>
+    </Setting>
+    <Setting Name="lien_ts3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">actuel-force.ovh:9987</Value>
+    </Setting>
+    <Setting Name="lien_version_modpack" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.actuel-force.ovh/jeux/wot/modpack/version_modpack.txt</Value>
+    </Setting>
+    <Setting Name="lien_version_mods" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.actuel-force.ovh/jeux/wot/modpack/mods/version_mods.txt</Value>
+    </Setting>
+    <Setting Name="lien_liste_mods" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.actuel-force.ovh/jeux/wot/modpack/mods/liste_mods.xml</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
