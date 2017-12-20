@@ -52,7 +52,7 @@ Public Class Modpack
             For Each noeudEnf In noeud.ChildNodes
                 Select Case noeudEnf.LocalName
                     Case "version"
-                        Version_wot = Mid(noeudEnf.InnerText, 4, 8)
+                        Version_wot = Mid(noeudEnf.InnerText, 4, 10)
                 End Select
             Next
         Next
@@ -142,6 +142,9 @@ Public Class Modpack
     Private Sub Bouton_lien_ts3_Click(sender As Object, e As EventArgs) Handles Bouton_lien_ts3.Click
         Process.Start("ts3server://" + My.Settings.lien_ts3)
     End Sub
+    Private Sub Bouton_lien_aide_Click(sender As Object, e As EventArgs) Handles Bouton_lien_aide.Click
+        Process.Start("http://actuel-force.ovh/app.php/modpack_wot")
+    End Sub
 
     '--- Affichage de la progressbar et extraction de l'archive ---
     '--------------------------------------------------------------
@@ -170,5 +173,5 @@ Public Class Modpack
         Catch
             Return False
         End Try
-    End Function    
+    End Function
 End Class

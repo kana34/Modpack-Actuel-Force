@@ -33,6 +33,7 @@ Partial Class Chemin_install
         'Suivant
         '
         Me.Suivant.BackColor = System.Drawing.Color.Transparent
+        Me.Suivant.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Suivant.Location = New System.Drawing.Point(184, 86)
         Me.Suivant.Name = "Suivant"
         Me.Suivant.Size = New System.Drawing.Size(150, 51)
@@ -41,6 +42,7 @@ Partial Class Chemin_install
         'Parcourir
         '
         Me.Parcourir.BackColor = System.Drawing.Color.Transparent
+        Me.Parcourir.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Parcourir.Location = New System.Drawing.Point(12, 86)
         Me.Parcourir.Name = "Parcourir"
         Me.Parcourir.Size = New System.Drawing.Size(150, 51)

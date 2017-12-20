@@ -80,6 +80,7 @@ Partial Class mods
         'Bouton_desinstall_mods
         '
         Me.Bouton_desinstall_mods.BackColor = System.Drawing.Color.Transparent
+        Me.Bouton_desinstall_mods.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Bouton_desinstall_mods.Location = New System.Drawing.Point(16, 277)
         Me.Bouton_desinstall_mods.Name = "Bouton_desinstall_mods"
         Me.Bouton_desinstall_mods.Size = New System.Drawing.Size(250, 78)
