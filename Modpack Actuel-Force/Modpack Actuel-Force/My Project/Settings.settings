@@ -32,5 +32,8 @@
     <Setting Name="lien_liste_mods" Type="System.String" Scope="User">
       <Value Profile="(Default)">http://www.actuel-force.ovh/jeux/wot/modpack/mods/liste_mods.xml</Value>
     </Setting>
+    <Setting Name="nom_checkbox" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -173,6 +173,18 @@ Namespace My
                 Me("lien_liste_mods") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property nom_checkbox() As String
+            Get
+                Return CType(Me("nom_checkbox"),String)
+            End Get
+            Set
+                Me("nom_checkbox") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

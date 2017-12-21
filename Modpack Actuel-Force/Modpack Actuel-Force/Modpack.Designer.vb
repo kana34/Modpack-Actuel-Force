@@ -95,7 +95,6 @@ Partial Class Modpack
         Me.Bouton_play.Name = "Bouton_play"
         Me.Bouton_play.Size = New System.Drawing.Size(299, 78)
         Me.Bouton_play.TabIndex = 15
-        Me.Bouton_play.Visible = False
         '
         'Bouton_instal_ts3
         '

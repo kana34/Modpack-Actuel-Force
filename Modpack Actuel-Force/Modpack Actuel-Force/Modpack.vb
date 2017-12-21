@@ -3,18 +3,17 @@ Imports System.Net
 Imports System.Xml
 
 Public Class Modpack
-    Dim Path_install As String
     Dim monStreamReader As StreamReader
     Dim xmlDoc As XmlDocument
     Dim configElements As XmlNodeList
-    Dim Version_wot As String
     Dim client As WebClient
 
     Dim procID As Integer
-    Dim DirDesktop As String
-    Dim bytesIn As Double
-    Dim totalBytes As Double
-    Dim percentage As Double
+    Dim Path_install, Version_wot, DirDesktop As String
+    Dim bytesIn, totalBytes, percentage As Double
+
+    Dim oShell, oLink As Object
+    Dim startInfo As New ProcessStartInfo
 
 
     Private Sub Modpack_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -97,9 +96,20 @@ Public Class Modpack
     End Sub
     Private Sub Bouton_play_Click(sender As Object, e As EventArgs) Handles Bouton_play.Click
         Try
+            DirDesktop = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory)
 
-            Dim startInfo As New ProcessStartInfo
-            startInfo.FileName = Path_install & "\WorldOfTanks.exe"
+            Try
+                oShell = CreateObject("WScript.Shell")
+                oLink = oShell.CreateShortcut(DirDesktop & "\WorldOfTanks.lnk")
+
+                oLink.TargetPath = My.Settings.path_install & "\WorldOfTanks.exe"
+                oLink.WindowStyle = 1
+                oLink.Save()
+            Catch ex As Exception
+
+            End Try
+
+            startInfo.FileName = DirDesktop & "\WorldOfTanks"
             startInfo.Arguments = "f"
             Process.Start(startInfo)
 
